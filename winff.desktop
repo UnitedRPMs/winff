@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=WinFF
+Name[de]=WinFF
+Terminal=false
+GenericName=WinFF
+GenericName[de]=WinFF
+Comment=GUI for FFMPEG
+Comment[de]=GUI für FFMPEG
+Exec=winff
+Icon=winff
+Categories=AudioVideo;AudioVideoEditing;
+X-KDE-StartupNotify=true
+X-SuSE-translate=true

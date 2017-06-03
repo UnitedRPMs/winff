@@ -1,0 +1,8 @@
+*.src.rpm
+winff*.tar.gz
+BUILD/*
+BUILDROOT/*
+RPMS/*
+SPECS/*
+SRPMS/*
+.directory
