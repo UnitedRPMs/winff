@@ -6,12 +6,13 @@
 Name:		winff
 Summary:	Graphical video and audio batch converter using ffmpeg
 Version:	1.5.5
-Release:	1%{?dist}
+Release:	2%{?dist}
 URL:		http://winff.org/
 Source0:	https://github.com/WinFF/%{name}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 Source1:	winff.desktop
 License:	GPLv3
-Group:		Video/Editors and Convertors
+Group:		Applications/Multimedia
+
 Requires:	ffmpeg
 Requires:	hicolor-icon-theme
 BuildRequires:	dos2unix
@@ -86,6 +87,9 @@ rm -rf %{buildroot}/
 
 
 %changelog
+
+* Thu Jun 15 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 1.5.5-2.git0b85024
+- Changed group
 
 * Sat Jun 03 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 1.5.5-1.git0b85024
 - Updated to 1.5.5-1.git0b85024
