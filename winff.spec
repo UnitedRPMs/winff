@@ -1,12 +1,12 @@
-%global gitdate 20170603
-%global commit0 0b85024d5aac56c04f0cb53f37b92780dc4791a4
+%global gitdate 20180321
+%global commit0 f721e4d023d61266212e0b3e3f9914ea84e3f120
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 Name:		winff
 Summary:	Graphical video and audio batch converter using ffmpeg
 Version:	1.5.5
-Release:	2%{?dist}
+Release:	3%{?dist}
 URL:		http://winff.org/
 Source0:	https://github.com/WinFF/%{name}/archive/%{commit0}.tar.gz#/%{name}-%{shortcommit0}.tar.gz
 Source1:	winff.desktop
@@ -87,6 +87,9 @@ rm -rf %{buildroot}/
 
 
 %changelog
+
+* Wed Mar 21 2018 David Vásquez <davidjeremias82 AT gmail DOT com> - 1.5.5-3.gitf721e4d
+- Updated to current commit
 
 * Thu Jun 15 2017 David Vásquez <davidjeremias82 AT gmail DOT com> - 1.5.5-2.git0b85024
 - Changed group
