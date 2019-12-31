@@ -1,5 +1,5 @@
-*.src.rpm
-winff*.tar.gz
+*.rpm
+*.tar.gz
 BUILD/*
 BUILDROOT/*
 RPMS/*

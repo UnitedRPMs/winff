@@ -26,7 +26,6 @@ BuildRequires:	desktop-file-utils
 BuildRequires:	fdupes
 BuildRequires:	gettext
 Conflicts:	winff-qt
-BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 
 %description
 WinFF is a GUI for the command line video converter FFMPEG.
@@ -71,10 +70,6 @@ for i in 16 24 32 48; do
   install -dm 755 %{buildroot}/%{_datadir}/icons/hicolor/"$i"x"$i"/apps
   install -m 644 winff-icons/"$i"x"$i"/*.png %{buildroot}/%{_datadir}/icons/hicolor/"$i"x"$i"/apps
 done
-
-
-%clean
-rm -rf %{buildroot}/
 
 %files 
 %defattr(755, root, root) 
